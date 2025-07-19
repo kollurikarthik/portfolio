@@ -3,6 +3,8 @@ body {
     background: linear-gradient(to right, #f5f7fa, #c3cfe2);
 }
 
+
+
 .skill-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -10,4 +12,216 @@ body {
 .skill-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* General section styling */
+#profile {
+    background: linear-gradient(to bottom right, #f9f9f9, #eaf0fc);
+    padding: 50px 20px;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Headings */
+#profile h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #CC3B17;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#profile h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #2c3e50;
+    border-left: 5px solid #CC3B17;
+    padding-left: 10px;
+}
+
+#profile h5 {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    margin-top: 10px;
+    background-color: #ffffffd4;
+    padding: 15px;
+    border-left: 3px solid #2c3e50;
+    border-radius: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    #profile {
+        padding: 30px 10px;
+    }
+
+    #profile h1 {
+        font-size: 2.2rem;
+    }
+
+    #profile h3 {
+        font-size: 1.3rem;
+    }
+
+    #profile h5 {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* Section background and typography */
+#projects {
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2ebf0 100%);
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    border-radius: 10px;
+}
+
+/* Title styling */
+#projects h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #cc3b17;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Project cards */
+#projects .card {
+    background-color: #fff;
+    border-radius: 16px;
+    border: none;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+#projects .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Project titles */
+#projects h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+/* Description text */
+#projects p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Highlighted text for tools */
+#projects p strong {
+    color: #cc3b17;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    #projects h1 {
+        font-size: 2.2rem;
+    }
+
+    #projects h3 {
+        font-size: 1.2rem;
+    }
+
+    #projects p {
+        font-size: 0.95rem;
+    }
+
+        #projects .card {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    /* Container and header styling */
+#others {
+  background: linear-gradient(135deg, #fff5ee 0%, #ffece6 100%);
+  padding: 40px 0 60px 0;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(204, 59, 23, 0.13), 0 1.5px 4px rgba(204, 59, 23, 0.1);
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  color: #cc3b17;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  margin: 16px auto 0 auto;
+  border-bottom: 3px solid #cc3b17;
+  opacity: 0.2;
+}
+
+/* Custom list */
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(204, 59, 23, 0.08);
+  font-size: 1.13rem;
+  padding: 32px 28px 26px 32px;
+}
+
+.custom-list li {
+  padding: 14px 0 14px 44px;
+  margin-bottom: 6px;
+  border-left: 3px solid #cc3b17;
+  background: url('https://cdn-icons-png.flaticon.com/512/463/463574.png') 16px 14px/22px 22px no-repeat;
+  min-height: 30px;
+  border-radius: 9px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0.5px 1.5px #cc3b1778;
+}
+.custom-list li:last-child { margin-bottom: 0; }
+
+.custom-list li:hover {
+  background-color: #fff7f5d9;
+  box-shadow: 0 5px 20px #cc3b1724;
+  cursor: pointer;
+}
+
+/* Badge styles for platforms */
+.badge {
+  font-size: 0.95em;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin: 0 2px;
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+.site-hk { background: #2EC866; }
+.site-lc { background: #FFA116; }
+.site-he { background: #323754; }
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .custom-list { font-size: 1.04rem; padding: 18px 10px 13px 16px;}
+  #others { padding: 18px 0 24px 0;}
+}
+@media (max-width: 600px) {
+  .custom-list { font-size: 0.97rem; }
+  #others { margin-bottom: 1.2rem; }
 }
